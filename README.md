@@ -24,7 +24,7 @@
 
 
 ## Paso 3:
-### Si selecciona que no desea ingresar mas elementos aparecera la siguiente ventana con el arbol 
+### Si selecciona que no desea ingresar mas elementos aparecera la siguiente ventana con el arbol generado con los numeros ingresados(ya balanceado)
 
 ![avl5](https://user-images.githubusercontent.com/55126792/110190073-2cf36c80-7de7-11eb-803b-e9ed307d0454.PNG)
 
