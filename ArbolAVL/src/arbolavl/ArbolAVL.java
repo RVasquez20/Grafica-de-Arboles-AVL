@@ -184,11 +184,12 @@ this.id=correlativo++;
         }                        
         try{
            String dotPath = "C:\\Archivos de programa\\Graphviz\\bin\\dot.exe";
+           String Direccion="C:\\Users\\rodri\\Documents\\GitHub\\Grafica-de-Arboles-AVL";
           Runtime rt = Runtime.getRuntime();
           String[] CMD=new String[5];
           CMD[0]=dotPath;
           CMD[1]="-Tjpg";
-          CMD[2]="C:\\Users\\rodri\\Desktop\\Curso Vim\\ArbolAVL\\ArbolAVL\\aux_grafico.dot";
+          CMD[2]=Direccion+"\\ArbolAVL\\aux_grafico.dot";
           CMD[3]="-o";
           CMD[4]=path;
           rt.exec(CMD);

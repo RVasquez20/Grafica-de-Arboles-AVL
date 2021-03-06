@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  * @author Desarrollo
  */
 public class main {
-
+final static String Direccion="C:\\Users\\rodri\\Documents\\GitHub\\Grafica-de-Arboles-AVL";
     /**
      * @param args the command line arguments
      */
@@ -47,19 +47,19 @@ public class main {
         
          String NombreImagen="\\ArbolAVL\\arbol_numeros.jpg";        
         
-        arbolAVL.graficar("C:\\Users\\rodri\\Desktop\\Curso Vim\\ArbolAVL"+NombreImagen);
+        arbolAVL.graficar(Direccion+NombreImagen);
         Thread.sleep(3000);
         Eliminar();
         V.RepList.setText(mostrar);
         
-        Image.setIcon(new javax.swing.ImageIcon("C:\\Users\\rodri\\Desktop\\Curso Vim\\ArbolAVL"+NombreImagen));
+        Image.setIcon(new javax.swing.ImageIcon(Direccion+NombreImagen));
         V.show();
        
     }
     
     public static void Eliminar(){
           try{
-               String NombreDot="C:\\Users\\rodri\\Desktop\\Curso Vim\\ArbolAVL\\ArbolAVL\\aux_grafico.dot";
+               String NombreDot=Direccion+"\\ArbolAVL\\aux_grafico.dot";
             File archivo = new File(NombreDot);
 
             boolean estatus = archivo.delete();;
@@ -67,10 +67,6 @@ public class main {
             if (!estatus) {
 
                 System.out.println("Error no se ha podido eliminar el  archivo");
-
-           }else{
-
-                System.out.println("Se ha eliminado el archivo exitosamente");
 
            }
 
